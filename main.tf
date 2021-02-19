@@ -9,8 +9,8 @@ terraform {
 
 provider "keycloak" {
   client_id      = "admin-cli"
-  username       = "admin"
-  password       = "secret"
+  username       = "admin" # caution: in a real szenario, the credentials would never be hardcoded here!
+  password       = "secret" # even more caution!!!
   url            = "http://localhost:8080"
   client_timeout = 30
 }
